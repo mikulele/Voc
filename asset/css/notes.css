@@ -1,0 +1,138 @@
+body{
+	background-color: #F2F6F7;
+}
+.clear{
+	clear: both;
+}
+.notes{
+	width: 80%;
+	margin-top: 75px !important;
+	margin: 0 auto;
+	height: auto;
+	display: block;
+}
+.wrapper{
+	background-color: #fff;
+	height: 100%;
+	background-size: cover;
+}
+.wrapper .write{
+	float: left;
+	font-family: 'proxima';
+	padding: 30px 0px 0px 50px;
+	color: #565E75;
+}
+.wrapper .btn-upload a{
+	float: right;
+	text-decoration: none;
+	border:solid transparent;
+	background:#00AFE8;
+	padding: 5px 20px;
+	color: #fff;
+	font-family: 'proxima';
+	margin: 30px 60px 0px 0px;
+}
+.wrapper hr {
+	margin-top: 30px;
+}
+.notes-left{
+	width: 35%;
+	float: left;
+}
+.i-border{
+	border:dashed 2px #ababab;
+	text-align: center;
+	height: auto;
+	padding: 75px 0px 50px 0px;
+	margin-top: 50px;
+	margin-left: 50px;
+	cursor: pointer;
+}
+.i-border i{
+	font-size: 90px;
+	color: #00AFE8;
+}
+.i-border h2{
+	padding-top: 20px;
+	font-size: 30px;
+	font-family: 'proxima';
+	color: #bdbdbd;
+}
+.notes-right{
+	width: 65%;
+	float: left;
+}
+.ququ p{
+	border-left: solid 3px #00AFE8;
+	margin-left: 50px;
+	font-size: 20px;
+	margin-top: 50px;
+	font-family: 'proxima';
+	padding-left: 10px;
+	color: #75809D;
+}
+form{
+	margin-left: 50px;
+	margin-top: 30px;
+}
+form input, textarea{
+	width: 85%;
+	height: 40px;
+	border:solid 2px transparent;
+	border-radius: 5px;
+	background: #F3F3F3;
+	font-family: 'proxima';
+	font-weight: bold;
+	padding-left: 20px;
+}
+form p{
+	font-size: 18px;
+	font-family: 'proxima';
+	color: #6C7386;
+	padding-top: 20px;
+}
+.btn-upload a:hover{
+	transition: all .3s ease;
+	cursor: pointer;
+}
+.btn-upload a {
+  display: inline-block;
+  vertical-align: middle;
+}
+.btn-upload a:hover,.btn-upload a:active {
+  -webkit-transform: scale(1.1);
+}
+
+footer{
+	clear: both;
+	background: #426779;
+	width: 100%;
+	height: auto;
+	padding-top: 20px;
+	padding-bottom: 45px;
+	margin-top: 100px;
+}
+
+footer .copyright{
+	float: left;
+	margin-top: 5px;
+}
+
+footer .copyright p{
+	font-family: 'pmedium';
+	color: #CCC;
+	font-size: 0.9em;
+}
+
+footer .copyright a{
+	text-decoration: none;
+	color: #CCC;
+}
+
+footer .education{
+	float: right;
+}
+
+footer .education img{
+	width: 90px;
+}
