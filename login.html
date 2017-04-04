@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="asset/css/main.css">
 	<link rel="stylesheet" type="text/css" href="asset/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="asset/css/responsive.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="icons/shortcut.png">
 </head>
 <body>
@@ -31,7 +32,7 @@
 			</div>
 		</div>
 	</header>
-	<section>
+	<section class="sec-login">
 		<div class="wrapper2">
 			<div class="login">
 				<div class="col-6">
@@ -62,9 +63,12 @@
 									<i class="fa fa-lock"></i>
 									<input type="password" placeholder="password" name="">
 								</p>
-								<p class="button">
-									<button>Login</button>
+								<p class="p-hidden">
 									<a href="#">Forgot your password ?</a>
+								</p>
+								<p>
+									<button>Login</button>
+									<a href="#"  class="button p-show">Forgot your password ?</a>
 								</p>
 							</form>
 						</div>
@@ -76,13 +80,15 @@
 			</div>
 		</div>
 	</section>
-	<footer>
-		<div class="wrapper">
-			<div class="copyright">
-				<p>&copy; 2017 <a href="#">EduCation</a> - All Rights Reserved</p>
-			</div>
-			<div class="education">
-				<a href="index.html"><img src="asset/img/icons/logo_White.png"></a>
+	<footer class="fot-login">
+		<div class="bottom">
+			<div class="bawah">
+				<div class="bot-bot">
+					&copy; 2017 <a href="#">EduCation</a> - All Right Reserved
+				</div>
+				<div class="bot-bot">
+					<a href="#" style="text-align: center;"><img src="asset/img/logo_White.png" alt="" align="left"></a>
+				</div>
 			</div>
 		</div>
 	</footer>
