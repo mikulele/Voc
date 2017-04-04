@@ -165,7 +165,7 @@ section .upload{
 	background: #FFF;
 	width: 100%;
 	height: auto;
-	padding-bottom: 545px;
+	display: inline-block;
 }
 
 section .upload .col-12{
@@ -214,6 +214,11 @@ section .upload .button button {
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
+
+	.btn-hide{
+		display: none;
+	}
+
 section .upload .button button:hover, section .upload .button button:active {
   box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
   -webkit-transform: scale(1.1);
@@ -287,31 +292,29 @@ footer{
 	background: #426779;
 	width: 100%;
 	height: auto;
-	padding-top: 20px;
-	padding-bottom: 45px;
-	margin-top: 100px;
+	margin-top: 50px;
 }
-
-footer .copyright{
-	float: left;
-	margin-top: 5px;
+.bottom{
+	background-color: #416779 !important;
+	height: auto;
 }
-
-footer .copyright p{
-	font-family: 'pmedium';
-	color: #CCC;
-	font-size: 0.9em;
+.bawah{
+	width: 80%;
+	margin: 0 auto;
+	padding: 30px 0px 45px 0px;
+	font-family: 'proxima';
+	color: #A9B8C0;
 }
-
-footer .copyright a{
+.bawah a {
 	text-decoration: none;
-	color: #CCC;
+	color: #A9B8C0;
 }
-
-footer .education{
+.bot-bot{
+	width: 50%;
+	margin: 0 auto;
+	float: left;
+}
+.bot-bot img{
+	width: 80px;
 	float: right;
-}
-
-footer .education img{
-	width: 90px;
 }
