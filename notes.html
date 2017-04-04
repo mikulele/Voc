@@ -3,26 +3,29 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Notes</title>
-	<link rel="stylesheet" href="asset/css/main.css">
 	<link rel="stylesheet" href="asset/css/notes.css">
 	<link rel="stylesheet" href="asset/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="asset/css/responsive.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="icons/shortcut.png">
 </head>
 <body>
-	<header>
+	<header class="head-notes">
 		<div id="menu" class="header-content">
 			<div class="wrapper">
 				<div class="logo">
-					<a href="#"><img src="asset/img/icons/logo.png"></a>
+					<a href="index.html"><img src="asset/img/icons/logo.png"></a>
 				</div>
 				<div class="menu">
-					<nav>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="index.html#story">Story</a></li>
-							<li><a href="index.html#gallery">Gallery</a></li>
-							<li><a href="index.html#team">Team</a></li>
-							<li><a href="index.html#contact">Contact</a></li>
+					<input class="burger-check" id="burger-check" type="checkbox">
+					<label for="burger-check" class="burger"></label>
+					<nav id="navigation1" class="navigation">
+						<ul id="MyTopnav" class="topnav">
+							<li><a class="link" href="#home">Home</a></li>
+							<li><a class="link" href="#story">Story</a></li>
+							<li><a class="link" href="#gallery">Gallery</a></li>
+							<li><a class="link" href="#team">Team</a></li>
+							<li><a class="link" href="#contact">Contact</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -31,22 +34,22 @@
 	</header>
 	<div class="clear"></div>
 	<div class="notes">
-		<div class="wrapper">
+		<div class="wrapper notes-wrap">
 			<div class="write">
 				<h2>Write Your Story</h2>
 			</div>
-			<div class="btn-upload">
+			<div class="btn-upload up-show">
 				<a href="#">UPLOAD</a>
 			</div>
 			<div class="clear"></div>
 			<hr>
-			<div class="notes-left">
+			<div class="notes-left col-a-12">
 				<div class="i-border">	
 					<i class="fa fa-plus-circle"></i>
 					<h2>Add Photo</h2>
 				</div>
 			</div>
-			<div class="notes-right">
+			<div class="notes-right col-a-12">
 				<div class="bc">
 					<div class="ququ">
 						<p>
@@ -55,7 +58,7 @@
 							berbagi dengan dunia.
 						</p>
 					</div>
-					<form action="">
+					<form action="" class="fr-notes">
 						<p>Title</p>
 						<input type="text">
 						<p>Add Labels</p>
@@ -64,22 +67,29 @@
 				</div>
 			</div>
 				<div class="clear"></div>
-			<form action="" style="padding-bottom: 30px;">
+			<form action="" class="fr-notes fr-nt" style="padding-bottom: 30px;" class="text">
 				<p>Stories note</p>
-				<textarea style="width: 91%; height: 200px;"></textarea>
+				<textarea style="width: 91%; height: 200px;" class="txt-notes"></textarea>
 			</form>
+			<div class="btn-upload up-hide">
+				<a href="#">UPLOAD</a>
+			</div>
 		</div>
 	</div>
 		<div class="clear"></div>
 	<footer>
-		<div class="wrapper">
-			<div class="copyright">
-				<p>&copy; 2017 <a href="#">EduCation</a> - All Rights Reserved</p>
-			</div>
-			<div class="education">
-				<a href="index.html"><img src="asset/img/icons/logo_White.png"></a>
+		<div class="bottom">
+			<div class="bawah">
+				<div class="bot-bot">
+					&copy; 2017 <a href="#">EduCation</a> - All Right Reserved
+				</div>
+				<div class="bot-bot">
+					<a href="#" style="text-align: center;"><img src="asset/img/logo_White.png" alt="" align="left"></a>
+				</div>
 			</div>
 		</div>
 	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="asset/javascript/nav.js"></script>
 </body>
 </html>
