@@ -428,6 +428,29 @@ section {
 		max-width: 85%;
 	}
 
+	/*upload*/
+	.btn-show{
+		display: none;
+	}
+	.btn-hide{
+		display: block;
+		margin-top: 30px;
+	}
+	.upload-title .heading{
+		text-align: center;
+	}
+	section .upload .photo{
+		width: 100%;
+		margin: 50px auto 0px auto;
+	}
+	.upload{
+		padding-bottom: 20px;
+	}
+	.wrapper3 .form{
+		width: 85%;
+		margin: 0 auto;
+	}
+
 }
 
 @media screen and (max-width: 768px){
