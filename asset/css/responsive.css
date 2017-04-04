@@ -373,6 +373,61 @@ section {
 	.fot-login{
 		margin-top: 0;
 	}
+
+	/*notes*/
+	.head-notes .header-content{
+		padding-bottom: 20px;
+	}
+	.up-show{
+		display: none;
+	}
+	.up-hide{
+		display: block;
+		margin-right: 7%;
+
+	}
+	.wrapper .up-hide a{
+		margin: 0;
+		border-radius: 5px;
+		text-align: center;
+	}
+	.notes-wrap{
+		width: 100%;
+		left: 0;
+		right: 0;
+		padding-bottom: 20px;
+		border-radius: 20px;
+		display: inline-block;
+	}
+	.i-border{
+		max-width: 100%;
+		margin-left: 0;
+	}
+	.i-border i{
+		font-size: 70px;
+		color: #00AFE8;
+	}
+	.i-border h2 {
+		font-size: 25px;
+	}
+	.ququ p{
+		font-size: 18px;
+		margin-left: 0;
+	}
+	.fr-notes p{
+		font-size: 15px;
+	}
+	.fr-notes{
+
+		margin-left: 15px;
+	}
+	.fr-nt p{
+		padding-top: 0;
+	}
+	.txt-notes{
+		max-width: 85%;
+	}
+
 }
 
 @media screen and (max-width: 768px){
