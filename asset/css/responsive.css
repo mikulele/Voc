@@ -288,11 +288,18 @@ section {
 		left: 0;
 	}
 	/*register*/
+	.sec-register{
+		padding:0;
+	}
 	section .register-content input[type="text"], section .register-content input[type="password"]{
 		margin-bottom: 20px;
 	}
+	section .register-content{
+		margin-top: 50px;
+		margin-bottom: 0;
+	}
 	section .register-title {
-		display: none;
+		padding: 80px 30px;
 	}
 	section .register-content input{
 		padding: 10px 10px;
@@ -300,7 +307,7 @@ section {
 	}
 	section .register {
 		border-left: 10px solid #00AFE8;
-		height: 480px;
+		height: auto;
 		position: relative;
 	}
 	section .register-content button {
@@ -312,6 +319,13 @@ section {
 		padding: 20px;
 	}
 	section .register-content form .information {
+		width: 100%;
+	}
+	.reg-create{
+		width: 100%;
+		margin-bottom: 7px;
+	}
+	.reg-information{
 		width: 100%;
 	}
 	/*login*/
@@ -335,7 +349,7 @@ section {
 	}
 	section .login {
 		border-left: 10px solid #00AFE8;
-		height: 350px;
+		height: auto;
 		position: relative;
 	}
 	section .login-content .p_register p{
