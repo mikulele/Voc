@@ -15,7 +15,7 @@ section {
   visibility: hidden;
 }
 
-@media (min-width: 482px;){
+@media screen and (min-width: 482px;){
 	.input, .input1{
 		max-width: 100%;
 	}
@@ -31,7 +31,7 @@ section {
 		font-size: 16px;
 	}
 }
-@media (max-width:680px) {
+@media screen and (max-width:680px) {
 	body{
 		font-size: 13px;
 	}
@@ -77,6 +77,14 @@ section {
 	}
 	section .story .add-notes{
 		margin-top: 50px;
+	}
+	.nav-prev i{
+		position: relative;
+		display: block;
+		right: 20px;
+	}
+	.nav-next{
+		left: 85%;
 	}
 
 	/*gallery */
@@ -232,7 +240,7 @@ section {
    	.footer-inner{
    		padding-left: 0;
    	}
-   	textarea{
+   	.our .input textarea{
    		max-width: 205px;
    	}
    	.input input{
@@ -275,6 +283,10 @@ section {
 	.bawah{
 		padding: 30px 0px 30px 0px;
 	}
+	/*notes*/
+	.text textarea{
+		left: 0;
+	}
 	/*register*/
 	section .register-content input[type="text"], section .register-content input[type="password"]{
 		margin-bottom: 20px;
@@ -302,8 +314,20 @@ section {
 	section .register-content form .information {
 		width: 100%;
 	}
-	section .login-title{
+	/*login*/
+	.p-hidden{
+		display: block;
+		margin-top: 5px;
+	}
+	.p-show{
 		display: none;
+	}
+	.sec-login{
+		padding: 0;
+	}
+	section .login-title{
+		padding: 80px 30px;
+		height: 350px;
 	}
 	section .login-content .email, section .login-content .password {
 		padding: 15px 0;
@@ -316,13 +340,13 @@ section {
 	}
 	section .login-content .p_register p{
 		position: absolute;
-		bottom: 100px;
+		bottom: 120px;
 	}
 	section .login-content button {
 		padding: 10px 25px;
 	}
 	section .login-content {
-		
+		margin-top: 50px;
 		background: none;
 		width: 500px;
 		padding: 20px;
@@ -332,9 +356,29 @@ section {
 	.col-6{
 		width: 100%;
 	}
+	.fot-login{
+		margin-top: 0;
+	}
 }
 
 @media screen and (max-width: 768px){
+	header .menu nav ul li a{
+	 	position: absolute;
+	  	left: 0;
+	 	right: 0;
+	 	top: 0;
+	  	bottom: 0;
+	  	bottom: 0;
+	  	border: none;
+	  	padding-left: 35px;
+	}
+	.animation-man img{
+		bottom: 0;
+		position: absolute;
+	}
+	#home{
+		height: 500px;
+	}
 	header .header-text{
 		margin-top: 125px;
 	}
@@ -395,25 +439,8 @@ section {
 	  	transition: max-height 0.5s ease-in-out;
 	}
 	
-	header .menu nav ul li a{
-	 	position: absolute;
-	  	left: 0;
-	 	right: 0;
-	 	top: 0;
-	  	bottom: 0;
-	  	bottom: 0;
-	  	border: none;
-	  	padding-left: 35px;
-	}
-	.animation-man img{
-		bottom: 0;
-		position: absolute;
-	}
-	header{
-		height: 500px;
-	}
 }
-@media screen and (min-width: 992px){
+@media screen and (max-width: 992px){
 
 }
 @media (min-width: 1200px) {
