@@ -1,9 +1,4 @@
 @font-face{
-	src: url('../font/Arial/arial-black-bold.ttf');
-	font-family: 'arial';
-}
-
-@font-face{
 	src: url('../font/Roboto/Roboto-Regular.ttf');
 	font-family: 'roboto';
 }
@@ -48,11 +43,23 @@ body{
 }
 
 header .header-content{
-	background: #FFF;
 	width: 100%;
 	height: auto;
 	padding-top: 20px;
 	padding-bottom: 50px;
+}
+
+.header-content {
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	transition-duration: 1s;
+	transition: .3s ease;
+	z-index: 99;
+}
+.header-content.change{
+	background-color: #FFF;
+	padding: 20px 0px 20px 0px;
 }
 
 header .logo{
