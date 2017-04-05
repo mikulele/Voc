@@ -671,7 +671,11 @@ section .story .nav-arrow label:hover{
 
 /* End Story */
 
-/* Gallery */
+/* 
+
+
+
+*/
 
 section .gallery{
 	width: 100%;
@@ -846,9 +850,9 @@ section .gallery .img .hover{
 }
 
 section .gallery .img:hover .hover{
-	transition: all .5s ease;
+	transition: all .3s ease;
 	visibility: visible;
-	opacity: 1;
+	opacity: 0.9;
 }
 
 section .gallery .img:hover img{
