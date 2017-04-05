@@ -121,7 +121,20 @@ header .menu nav ul{
 	margin: 0;
 	padding: 0;
 }
-
+header .menu nav ul li a:before {
+  content: "";
+  position: absolute;
+  margin-right: 25px;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  border-bottom:solid 2px #2098D1;
+  height: 2px;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
 header .menu nav ul li{
 	display: inline-block;
 }
