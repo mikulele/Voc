@@ -191,26 +191,9 @@ header .menu nav ul li {
 header .menu nav ul li a:hover{
 	color: #2098D1;
 }
-header .menu nav ul li a:before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  right: 50%;
-  margin-right: 25px;
-  padding: 5px 0px;
-  bottom: 0;
-  border-bottom:solid 2px #2098D1;
-  height: 2px;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-
 header .menu nav ul li a:hover:before, header .menu nav ul li a:active:before {
   left: 0;
   right: 0;
-  z-index: 999;
 }
 
 /* Menu Navigasi Header */ 
@@ -841,15 +824,16 @@ section .gallery .img .hover{
 	top: 0;
 	right: 0; 
 	left: 0;
-	bottom: 0;  
-	opacity: .9; 
-	transition: all .5s ease; 
-	display: none;
+	bottom: 0;
+	transition: all .5s ease;
+	visibility: hidden;
+	opacity: 0;
 }
 
 section .gallery .img:hover .hover{
 	transition: all .5s ease;
-	display: block;
+	visibility: visible;
+	opacity: 1;
 }
 
 section .gallery .img:hover img{
