@@ -129,7 +129,8 @@ section {
 	section #popup1 .content .img h2, section #popup2 .content .img h2, section #popup3 .content .img h2, section #popup4 .content .img h2, section #popup5 .content .img h2, section #popup6 .content .img h2{
 		display: block;
 		text-align: center;
-		margin-top: 8px;
+		margin-top: 15px;
+		font-size: 1.7em;
 	}
 	section #popup1 .content .img .ket, section #popup2 .content .img .ket, section #popup3 .content .img .ket, section #popup4 .content .img .ket, section #popup5 .content .img .ket, section #popup6 .content .img .ket{
 		display: block;
@@ -189,6 +190,9 @@ section {
 		padding: 0 10px;
 		text-align: justify;
 		width: 95%;
+	}
+	section .popup-content .isi{
+		font-size: 1.1em;
 	}
 	section #popup1 .social{
 		position: absolute;
@@ -289,7 +293,7 @@ section {
 	}
 	/*register*/
 	.sec-register{
-		padding:0;
+		padding-top: 135px;
 	}
 	section .register-content input[type="text"], section .register-content input[type="password"]{
 		margin-bottom: 20px;
@@ -337,7 +341,7 @@ section {
 		display: none;
 	}
 	.sec-login{
-		padding: 0;
+		padding-top: 135px;
 	}
 	section .login-title{
 		padding: 80px 30px;
@@ -384,7 +388,9 @@ section {
 	.up-hide{
 		display: block;
 		margin-right: 7%;
-
+	}
+	.notes{
+		margin-top: 25px !important;
 	}
 	.wrapper .up-hide a{
 		margin: 0;
@@ -397,6 +403,7 @@ section {
 		right: 0;
 		padding-bottom: 20px;
 		border-radius: 20px;
+		margin-top: 100px;
 		display: inline-block;
 	}
 	.i-border{
@@ -443,33 +450,24 @@ section {
 		width: 100%;
 		margin: 50px auto 0px auto;
 	}
-	.upload{
+	section .upload{
 		padding-bottom: 20px;
+		margin-top: 125px;
 	}
 	.wrapper3 .form{
 		width: 85%;
 		margin: 0 auto;
 	}
-
 }
 
 @media screen and (max-width: 768px){
-	header .menu nav ul li a{
-	 	position: absolute;
-	  	left: 0;
-	 	right: 0;
-	 	top: 0;
-	  	bottom: 0;
-	  	bottom: 0;
-	  	border: none;
-	  	padding-left: 35px;
-	}
 	.animation-man img{
 		bottom: 0;
 		position: absolute;
+		width: 500p
 	}
 	#home{
-		height: 500px;
+		height: 608px;
 	}
 	header .header-text{
 		margin-top: 125px;
@@ -480,17 +478,18 @@ section {
 	header .menu nav ul li {
 		float: none;
 		width: 100%;
-		padding: 18px 10px;
+		padding: 0;
 	}
-	.header-content{
-		height: 40px !important;
+	header .header-content{
+		height: 10px;
 		overflow: visible !important;
+		background: #FFF;
+	}
+	.header-content.change{
+		height: 45px;
 	}
 	.header-content.change .navigation{
 		background: #FFF;
-		position: absolute;
-		left: 0;
-		right: 0;
 	}
 	.burger{
 		display: block;
@@ -531,6 +530,56 @@ section {
 	  	transition: max-height 0.5s ease-in-out;
 	}
 	
+	header .menu nav ul li a{
+		display: inline-block;
+		vertical-align: middle;
+		-webkit-transform: perspective(1px) translateZ(0);
+		transform: perspective(1px) translateZ(0);
+		box-shadow: 0 0 1px transparent;
+		-webkit-transition-property: color;
+		transition-property: color;
+ 		-webkit-transition-duration: 0.3s;
+  		transition-duration: 0.3s;
+	 	position: relative;
+	  	margin: 0;
+	  	padding: 7px 0;
+	  	padding-left: 30px;
+	  	width: 100%;
+	}
+	.animation-man img{
+		bottom: 0;
+		position: absolute;
+	}
+	header .menu nav ul li a:before{
+	  content: "";
+	  position: absolute;
+	  z-index: -1;
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	  border: none;
+	  background: #00AFE8;
+	  padding: 15px 0;
+	  -webkit-transform: scaleX(0);
+	  transform: scaleX(0);
+	  -webkit-transform-origin: 0 50%;
+	  transform-origin: 0 50%;
+	  -webkit-transition-property: transform;
+	  transition-property: transform;
+	  -webkit-transition-duration: 0.3s;
+	  transition-duration: 0.3s;
+	  -webkit-transition-timing-function: ease-out;
+	  transition-timing-function: ease-out;
+	}
+	header .menu nav ul li a:hover, header .menu nav ul li a:focus, header .menu nav ul li a:active{
+  		color: #fff ;
+	}
+
+	header .menu nav ul li a:hover:before, header .menu nav ul li a:focus:before, header .menu nav ul li a:active:before{
+	  -webkit-transform: scaleX(1);
+	  transform: scaleX(1);
+	}
 }
 @media screen and (max-width: 992px){
 
