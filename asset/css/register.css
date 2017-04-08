@@ -135,6 +135,7 @@ header .menu nav ul li a{
 	font-size: 1.1em;
 	margin: 10px 30px 10px 0px;
 	padding: 5px 10px;
+	cursor:pointer;
 }
 header .menu nav ul li {
   display: inline-block;
